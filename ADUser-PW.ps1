@@ -1,4 +1,2 @@
-::Save as .ps1 for launching via PowerShell
-
 Get-ADUser -filter * -properties PasswordLastSet, PasswordExpired, PasswordNeverExpires | sort Name | ft Name, PasswordLastSet, PasswordExpired, PasswordNeverExpires
 pause
